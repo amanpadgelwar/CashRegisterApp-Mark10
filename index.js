@@ -6,7 +6,7 @@ var noofNotes =document.getElementsByClassName('no-Of-Notes');
 var availableNotes=[2000,500,100,20,10,5,1];
 console.log(billAmount.value);
 
-function checkBillAndCashAmount()
+checkButton.addEventListener("click",function checkBillAndCashAmount()
 {
 hideMessage();
     if(billAmount.value>0){
@@ -46,5 +46,5 @@ function hideMessage(){
 
 
 };
-checkButton.addEventListener("click", checkBillAndCashAmount);
+
 
