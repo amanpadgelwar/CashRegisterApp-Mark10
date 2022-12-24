@@ -1,9 +1,10 @@
-const billAmount = document.querySelector("#bill-amount");
-const cashAmount = document.querySelector("#cash-amount");
-var checkButton =document.querySelector("#check-button");
-var error = document.querySelector("#error-message");
-var noofNotes =document.querySelectorAll(".no-Of-Notes");
+var billAmount = document.getElementById('bill-amount');
+var cashAmount = document.getElementById('cash-amount');
+var checkButton =document.getElementById('check-button');
+var error = document.getElementById('message');
+var noofNotes =document.getElementsByClassName('no-Of-Notes');
 var availableNotes=[2000,500,100,20,10,5,1];
+console.log(billAmount.value);
 
 function checkBillAndCashAmount()
 {
@@ -45,5 +46,5 @@ function hideMessage(){
 
 
 };
-checkButton.addEventListener("click", checkBillAndCashAmount());
+checkButton.addEventListener("click", checkBillAndCashAmount);
 
