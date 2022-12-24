@@ -2,7 +2,7 @@ const billAmount = document.querySelector("#bill-amount");
 const cashAmount = document.querySelector("#cash-amount");
 var checkButton =document.querySelector("#check-button");
 var error = document.querySelector("#error-message");
-var noofNotes =document.querySelectorAll("")
+var noofNotes =document.querySelectorAll(".no-Of-Notes");
 var availableNotes=[2000,500,100,20,10,5,1];
 
 function checkBillAndCashAmount()
@@ -24,10 +24,11 @@ hideMessage();
 function calculateChange(returnAmount){
     for (let i=0;i<availableNotes.length;i++){
      var amoutofNotes=Math.trunc(
-        returnAmount/availableNotes[0]
+        returnAmount/availableNotes[i]
      );
 
-     returnAmount%=availableNotes[0]
+     returnAmount%=availableNotes[i];
+     noofNotes[i].innerHTML =amoutofNotes;
 
     }
 
