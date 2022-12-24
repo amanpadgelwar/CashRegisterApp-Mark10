@@ -4,7 +4,7 @@ var checkButton =document.getElementById('check-button');
 var error = document.getElementById('message');
 var noofNotes =document.getElementsByClassName('no-Of-Notes');
 var availableNotes=[2000,500,100,20,10,5,1];
-console.log(billAmount.value);
+console.log("clicked");
 
 checkButton.addEventListener("click",function checkBillAndCashAmount()
 {
@@ -45,6 +45,6 @@ function hideMessage(){
  }
 
 
-};
+});
 
 
