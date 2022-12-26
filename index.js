@@ -24,7 +24,7 @@ checkButton.addEventListener("click",() =>
     hideMessage();
 
     if(bill> 0){
-        if(cash > bill){
+            if(cash > bill){
             const returnAmount= cash -bill;
             calculateChange(returnAmount);
             console.log(returnAmount)
